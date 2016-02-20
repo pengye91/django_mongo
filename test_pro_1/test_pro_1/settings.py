@@ -79,10 +79,15 @@ WSGI_APPLICATION = 'test_pro_1.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
 DATABASES = {
-    #'default': {
-     #   'ENGINE': 'django.db.backends.dummy',
-      #  'NAME': 'test1db',
- #   }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test1db',
+	'USER': 'root',
+	'PASSWORD': 'pengye2901307001',
+	'HOST': '127.0.0.1',
+	'PORT': '3306',
+
+    }
 }
 
 
